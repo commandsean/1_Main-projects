@@ -321,10 +321,7 @@ body {
 }
 
 .rank_container {
-  padding-bottom: 50px;
-  padding-top: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 50px 20px;
   width: 100%;
   background: #eaf2f9;
 }
