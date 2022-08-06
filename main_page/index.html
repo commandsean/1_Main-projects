@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SCH</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shorcut icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo" id="toppest">SCH</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#sec">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="./img/stars.png" id="stars" />
+      <img src="./img/moon.png" id="moon" />
+      <img src="./img/mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">Soong Moon carrer HTML</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="./img/mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>SCH의 대하여</h2>
+      <p>
+        SCH는 Soong Moon Carrer HTML 의 약자로 숭문고등학교 동아리인 창의미래
+        AI연구반 중 4명의 구성원으로 이루어진 팀입니다.
+      </p>
+      <br /><br />
+      <h4>활동</h4>
+      <p>
+        SCH는 팀 이름 그대로 HTML, CSS, JavaScript 등을 사용하여 학생들을 위한
+        여러 사이트를 만드는 것을 목표로 합니다. 그중에서도 대학 입시 관련 자료,
+        여러 학과에 대한 자료 혹은 숭문고 인공 지능 융합 중점반의 관한 소식을
+        전합니다.
+      </p>
+      <br /><br />
+      <h4>로고</h4>
+      <div class="slider" id="slider">
+        <input type="radio" name="slide" id="slide1" checked />
+        <input type="radio" name="slide" id="slide2" />
+        <ul id="imgholder" class="imgs">
+          <li><img src="./img/SCH_logo.jpeg" /></li>
+          <li><img src="./img/SCH_logo_2.jpeg" /></li>
+        </ul>
+        <div class="bullets">
+          <label for="slide1">&nbsp;</label>
+          <label for="slide2">&nbsp;</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="work" id="work">
+      <h2>SCH의 활동들</h2>
+      <div class="slider_2">
+        <input type="radio" name="slide_2" id="slide2_1" checked />
+        <input type="radio" name="slide_2" id="slide2_2" />
+        <input type="radio" name="slide_2" id="slide2_3" />
+        <input type="radio" name="slide_2" id="slide2_4" />
+        <ul id="imgholder" class="imgs_2">
+          <li>
+            <a
+              href="https://soongmoon-carrer-html-test.netlify.app/"
+              target="_blank"
+              ><img src="./img/work_1.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://url.kr/87vrng" target="_blank"
+              ><img src="./img/work_2.png"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://soongmoon-carrer-html-college.netlify.app/"
+              target="_blank"
+              ><img src="./img/work_3.png"
+            /></a>
+          </li>
+          <li><img src="./img/work_4.png" /></li>
+        </ul>
+        <div class="bullets_2">
+          <label for="slide2_1">&nbsp;</label>
+          <label for="slide2_2">&nbsp;</label>
+          <label for="slide2_3">&nbsp;</label>
+          <label for="slide2_4">&nbsp;</label>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <p style="text-align: center">*이미지 클릭시 사이트로 연결됩니다*</p>
+      <br />
+      <hr />
+      <br />
+      <p>아직 PC용 사이트여서 모바일에서는 어색할 수 있습니다.</p>
+    </div>
+
+    <script>
+      let stars = document.getElementById('stars');
+      let moon = document.getElementById('moon');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let mountains_front = document.getElementById('mountains_front');
+      let header = document.querySelector('header');
+
+      window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        moon.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.5 + 'px';
+        mountains_front.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+      });
+    </script>
+  </body>
+</html>
