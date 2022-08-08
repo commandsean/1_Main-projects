@@ -354,6 +354,7 @@ body {
   display: flex;
   height: 100%;
   width: 100px;
+  border: 1px solid red;
 }
 
 .college_rank_info {
