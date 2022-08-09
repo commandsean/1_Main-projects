@@ -351,17 +351,68 @@ body {
 }
 
 .college_rank_name {
+  justify-content: center;
+  align-items: center;
   display: flex;
   height: 100%;
-  width: 100px;
+  width: 20%;
   border: 1px solid red;
 }
 
 .college_rank_info {
-  display: flex;
-  border: 1px solid green;
+  font-size: 3vh;
+  display: block;
+  border: 1px solid blue;
   height: 100%;
-  width: 500px;
+  width: 60%;
+}
+
+.applicant {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  height: 33%;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.qs {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  height: 33%;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.THE {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  height: 33%;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.detail_button_container {
+  border: 1px solid green;
+  width: calc(10% - 1vw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail_button {
+  z-index: 1000;
+  width: 50%;
+  height: 20%;
+  background: #0a84ff;
+  border: 1px solid #0a84ff;
+  opacity: 0.5;
+}
+
+.detail_button:hover {
+  cursor: pointer;
 }
 
 .rank_container {
