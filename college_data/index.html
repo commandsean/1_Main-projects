@@ -37,13 +37,14 @@
     }
   </script>
   <body>
+    <a href="#top"><div class="go_up"></div></a>
     </script>
-    <div class="top_container">
+    <div id="top" class="top_container">
       <div class="top_list">
-        <a href="#" class="top_list_1"><span class="top_list_sch">SCH Home</span></a>
-        <a href="#" class="top_list_2">메인페이지</a>
-        <a href="#" class="top_list_3">지역별 대학</a>
-        <a href="#" class="top_list_4">대학 순위</a>
+        <a href="https://soongmoon-carrer-html.netlify.app" class="top_list_1"><span class="top_list_sch">SCH Home</span></a>
+        <a onclick="alert('이미 메인페이지 입니다')" class="top_list_2" style="cursor: pointer;">메인페이지</a>
+        <a href="#college_rank" class="top_list_3">대학 순위</a>
+        <a href="#location_college" class="top_list_4">지역별 대학</a>
         <a href="#" class="top_list_5">대학 입학처</a>
         <a href="#" class="top_list_6">수시 등급</a>
         <a href="#" class="top_list_7">정시 등급</a>
@@ -62,7 +63,7 @@
         </button>
       </div>
     </div>
-    <div class="college_rank_container">
+    <div id="college_rank" class="college_rank_container">
       <div class="rank_title">
         <span class="thick"> 국내 대학 순위</span><br>
         <div class="small">여러가지의 조건들로 순위를 결정했어요</div>
@@ -293,6 +294,28 @@
           <div class="rank_10_img"></div>
         </div>
       </div>
+    </div>
+    <div id="location_college" class="location_college">
+      <div class="location_title">
+        <span class="thick"> 지역별 대학</span><br>
+        <div class="small">지역별로 대학을 모아봤어요</div>
+      </div>
+      <div class="location_college_container">
+        <div class="location_college_container_left">
+        </div>
+        <div class="location_college_map">
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Seoul.html"><div class="seoul_point"></div></a>
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Gyeonggi_do.html"><div class="Gyeonggi-do_point"></div></a>
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Chungcheong_do.html"><div class="Chungcheong-do_point"></div></a>
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Jeolla_do.html"><div class="Jeolla-do_point"></div></a>
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Gangwon_do.html"><div class="Gangwon-do_point"></div></a>
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Gyeongsang_do.html"><div class="Gyeongsang-do_point"></div></a>
+          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Jeju.html"><div class="Jeju_point"></div></a>
+        </div>
+        <div class="location_college_container_right">
+        </div>
+      </div>
+      
     </div>
   </body>
 </html>

@@ -53,6 +53,45 @@ body {
   font-style: normal;
 }
 
+/* 최상단 가기 */
+.go_up {
+  opacity: 0.3;
+  z-index: 1000000;
+  background-color: white;
+  right: 5px;
+  bottom: 5px;
+  position: fixed;
+  box-shadow: 5px 5px 8px 8px rgba(199, 199, 199, 0.8);
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-image: url('./img/arrow-up.png');
+  background-size: cover;
+}
+
+.go_up:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.go_up::before {
+  text-align: center;
+  display: none;
+  color: black;
+  content: 'Top';
+  top: -65%;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  background: white;
+  position: absolute;
+}
+
+.go_up:hover::before {
+  display: block;
+}
+
 /* 1번 컨테이너*/
 
 .wave_1 {
@@ -726,3 +765,386 @@ body {
 .rank_10:hover .rank_detail {
   right: 0;
 }
+
+/* 2번 컨테이너
+
+
+
+
+
+
+
+
+
+3번 컨테이너 (지역별 대학) location_college*/
+
+.location_college {
+  width: 100%;
+  height: 2000px;
+  background: #fff;
+  border: 1px solid black;
+}
+
+.location_title {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #273c63;
+  font-size: 40px;
+  text-align: center;
+}
+
+.location_college > .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2px;
+}
+
+.location_college > .line > .line_line {
+  width: 90%;
+  height: 100%;
+  background: #50606e;
+}
+
+.location_college_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #c0dee1;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+}
+
+.location_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.location_button:hover {
+  cursor: pointer;
+}
+
+.location_college_container_left {
+  left: 0;
+  position: absolute;
+  width: 600px;
+  height: 900px;
+}
+
+/* 지도 왼쪾 
+
+
+*/
+
+.Seoul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+}
+
+.Gyeonggi-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 25%;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+}
+
+.Chungcheong-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+}
+
+.Jeolla-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 75%;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+}
+
+/* 지도 왼쪾 
+
+
+*/
+
+.location_college_map {
+  z-index: 10;
+  background-color: #3498db;
+  border-radius: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./img/map.png');
+  position: absolute;
+  width: 700px;
+  height: 900px;
+}
+
+/* 지도 표시점 */
+
+.location_college_map a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.seoul_point {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 260px;
+  top: 235px;
+}
+
+.seoul_point::before {
+  content: '서울특별시';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -240%;
+  left: -200%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.seoul_point:hover::before {
+  display: flex;
+}
+
+.Gyeonggi-do_point {
+  left: 290px;
+  top: 280px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+.Gyeonggi-do_point::before {
+  display: none;
+  content: '경기도';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -170%;
+  left: -120%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Gyeonggi-do_point:hover::before {
+  display: flex;
+}
+
+.Chungcheong-do_point {
+  left: 300px;
+  top: 440px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+.Chungcheong-do_point::before {
+  content: '충청도';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -170%;
+  left: -120%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Chungcheong-do_point:hover::before {
+  display: flex;
+}
+
+.Jeolla-do_point {
+  left: 250px;
+  top: 650px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+.Jeolla-do_point::before {
+  content: '전라도';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -170%;
+  left: -120%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Jeolla-do_point:hover::before {
+  display: flex;
+}
+
+.Gangwon-do_point {
+  left: 440px;
+  top: 200px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+.Gangwon-do_point::before {
+  content: '강원도';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -170%;
+  left: -120%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Gangwon-do_point:hover::before {
+  display: flex;
+}
+
+.Gyeongsang-do_point {
+  left: 490px;
+  top: 500px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+.Gyeongsang-do_point::before {
+  content: '경상도';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -170%;
+  left: -120%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Gyeongsang-do_point:hover::before {
+  display: flex;
+}
+
+.Jeju_point {
+  left: 200px;
+  top: 810px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+}
+
+.Jeju_point::before {
+  content: '제주도';
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  top: -170%;
+  left: -120%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Jeju_point:hover::before {
+  display: flex;
+}
+
+/* 지도 표시점 */
+
+.location_college_container_right {
+  right: 0;
+  position: absolute;
+  width: 600px;
+  height: 900px;
+}
+
+/* 지도 오른쪽 
+
+*/
+
+.Gangwon-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 33%;
+}
+
+.Gyeongsang-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 33%;
+  position: absolute;
+  width: 100%;
+  height: 33%;
+}
+
+.Jeju {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 66%;
+  position: absolute;
+  width: 100%;
+  height: 33%;
+}
+
+/* 지도 오른쪽 
+
+*/
