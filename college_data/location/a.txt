@@ -1,0 +1,11 @@
+    <a href="https://soongmoon-carrer-html-college.netlify.app/"
+      ><div class="go_back">돌아가기</div></a
+    >
+    <div class="title_container">
+      <div class="title">서울특별시</div>
+    </div>
+    <div class="main_container">
+    </div>
+
+
+    <a href="https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/.html"><div class="college_button">가톨릭대학교</div></a>

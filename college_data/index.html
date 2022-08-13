@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="google-site-verification" content="UykK-ep-1PyBTI8qxUakBg8tkZsFpqz3jfOd4UUemDQ" />
+    <meta
+      name="google-site-verification"
+      content="UykK-ep-1PyBTI8qxUakBg8tkZsFpqz3jfOd4UUemDQ"
+    />
     <link rel="shorcut icon" href="./img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
@@ -13,13 +16,34 @@
     <title>SCH 대학 데이터</title>
   </head>
   <script>
-    (function(d) {
+    (function (d) {
       var config = {
-        kitId: 'mrh7voz',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+          kitId: 'mrh7voz',
+          scriptTimeout: 3000,
+          async: true,
+        },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+        }, config.scriptTimeout),
+        tk = d.createElement('script'),
+        f = false,
+        s = d.getElementsByTagName('script')[0],
+        a;
+      h.className += ' wf-loading';
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != 'complete' && a != 'loaded')) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s);
     })(document);
   </script>
   <script>
@@ -29,7 +53,7 @@
       if (filter.indexOf(navigator.platform.toLowerCase()) < 0) {
         //mobile
         console.log('mobile 접속');
-        location.replace("https://soongmoon-carrer-html-college-m.netlify.app");
+        location.replace('https://soongmoon-carrer-html-college-m.netlify.app');
       } else {
         //pc
         console.log('pc 접속');
@@ -38,65 +62,81 @@
   </script>
   <body>
     <a href="#top"><div class="go_up"></div></a>
-    </script>
     <div id="top" class="top_container">
       <div class="top_list">
-        <a href="https://soongmoon-carrer-html.netlify.app" class="top_list_1"><span class="top_list_sch">SCH Home</span></a>
-        <a onclick="alert('이미 메인페이지 입니다')" class="top_list_2" style="cursor: pointer;">메인페이지</a>
+        <a href="https://soongmoon-carrer-html.netlify.app" class="top_list_1"
+          ><span class="top_list_sch">SCH Home</span></a
+        >
+        <a
+          onclick="alert('이미 메인페이지 입니다')"
+          class="top_list_2"
+          style="cursor: pointer"
+          >메인페이지</a
+        >
         <a href="#college_rank" class="top_list_3">대학 순위</a>
         <a href="#location_college" class="top_list_4">지역별 대학</a>
         <a href="#" class="top_list_5">대학 입학처</a>
         <a href="#" class="top_list_6">수시 등급</a>
         <a href="#" class="top_list_7">정시 등급</a>
       </div>
-      <br><br><br>
+      <br /><br /><br />
       <div class="main_text">
-        SCH가 모은<br>
-        <span class="main_text_1">"대학 정보들"</span>을 즐겨라<br>
-        <div class="main_text_2">평소 찾기 귀찮았던 것들을 한눈에 살펴보세요</div>
+        SCH가 모은<br />
+        <span class="main_text_1">"대학 정보들"</span>을 즐겨라<br />
+        <div class="main_text_2">
+          평소 찾기 귀찮았던 것들을 한눈에 살펴보세요
+        </div>
       </div>
       <div class="search_bar">
         <div class="top_serach_right">대학명 검색</div>
-        <input type="text" class="search_bar_real" placeholder="대학교 이름을 검색해주세요..">
+        <input
+          type="text"
+          class="search_bar_real"
+          placeholder="대학교 이름을 검색해주세요.."
+        />
         <button class="top_search_button" onclick="">
-          <img src="./img/search.png">
+          <img src="./img/search.png" />
         </button>
       </div>
     </div>
     <div id="college_rank" class="college_rank_container">
       <div class="rank_title">
-        <span class="thick"> 국내 대학 순위</span><br>
+        <span class="thick"> 국내 대학 순위</span><br />
         <div class="small">여러가지의 조건들로 순위를 결정했어요</div>
       </div>
       <div class="rank_title_box">
-        <div class="title_box_1"><img src="./img/group.png"><br>
-          <span class="title_t_1">지원자, 재학생 비율</span><br>
-          <span class="small_t_1">한해 대학 입시 지원자 수 와 재학생 수를 고려 하였습니다.</span>
+        <div class="title_box_1">
+          <img src="./img/group.png" /><br />
+          <span class="title_t_1">지원자, 재학생 비율</span><br />
+          <span class="small_t_1"
+            >한해 대학 입시 지원자 수 와 재학생 수를 고려 하였습니다.</span
+          >
         </div>
         <div class="title_box_2">
-          <img src="./img/qs.png"><br>
-          <span class="title_t_2">영국의 고등교육 평가기관</span><br>
-          <sapn class="small_t_2">QS(Quancquerelli Symonds) 기관에서 책정한 대학 점수를 반영 하였습니다.</sapn>
+          <img src="./img/qs.png" /><br />
+          <span class="title_t_2">영국의 고등교육 평가기관</span><br />
+          <sapn class="small_t_2"
+            >QS(Quancquerelli Symonds) 기관에서 책정한 대학 점수를 반영
+            하였습니다.</sapn
+          >
         </div>
         <div class="title_box_3">
-          <img src="./img/THE.svg"><br>
-          <span class="title_t_3">THE</span><br>
-          <sapn class="small_t_3">Times High Eductaion에서 발표한 대학 순위를 반영 하였습니다.</sapn>
+          <img src="./img/THE.svg" /><br />
+          <span class="title_t_3">THE</span><br />
+          <sapn class="small_t_3"
+            >Times High Eductaion에서 발표한 대학 순위를 반영 하였습니다.</sapn
+          >
         </div>
       </div>
-      <br><br>
-
-
-<!-- https://ted-edu.tistory.com/6 -->
-<!-- https://www.mrwrite.co.kr/422 -->
-
-
-
+      <br /><br />
       <div class="rank_container">
         <div class="rank_1">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">1</div>
             </div>
             <div class="college_rank_name">서울대학교</div>
@@ -107,7 +147,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Seoul_National_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/서울대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -116,7 +161,10 @@
         <div class="rank_2">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">2</div>
             </div>
             <div class="college_rank_name">카이스트(KAIST)</div>
@@ -127,7 +175,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/daejeon/kaist.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/daejeon/카이스트.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -136,7 +189,10 @@
         <div class="rank_3">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">3</div>
             </div>
             <div class="college_rank_name">고려대학교</div>
@@ -147,7 +203,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Korea_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/고려대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -156,7 +217,10 @@
         <div class="rank_4">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">4</div>
             </div>
             <div class="college_rank_name">연세대학교</div>
@@ -167,7 +231,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Yonsei_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/연세대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -176,10 +245,15 @@
         <div class="rank_5">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">5</div>
             </div>
-            <div class="college_rank_name" style="font-size: 2.7vw;">포항공과대학교</div>
+            <div class="college_rank_name" style="font-size: 2.7vw">
+              포항공과대학교
+            </div>
             <div class="college_rank_info">
               <div class="applicant">지원, 재학생 비율 :10.1</div>
               <div class="qs">QS 점수 : 65.3</div>
@@ -187,7 +261,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/Gyeongsangbuk_do/postech.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/Gyeongsangbuk_do/포항공과대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -196,7 +275,10 @@
         <div class="rank_6">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">6</div>
             </div>
             <div class="college_rank_name">성균관대학교</div>
@@ -207,7 +289,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Sungkyunkwan_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/성균관대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -216,18 +303,26 @@
         <div class="rank_7">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">7</div>
             </div>
             <div class="college_rank_name">한양대학교</div>
             <div class="college_rank_info">
               <div class="applicant">지원, 재학생 비율 : 15.0</div>
               <div class="qs">QS 점수 : 49.8</div>
-              <div class="THE">THE 점수 : 56.5 </div>
+              <div class="THE">THE 점수 : 56.5</div>
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Hanyang_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/한양대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -236,18 +331,26 @@
         <div class="rank_8">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">8</div>
             </div>
             <div class="college_rank_name">경희대학교</div>
             <div class="college_rank_info">
-              <div class="applicant">지원, 재학생 비율 : 17.5 </div>
+              <div class="applicant">지원, 재학생 비율 : 17.5</div>
               <div class="qs">QS 점수 : 37.2</div>
               <div class="THE">THE 점수 : 58.8</div>
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Kyung_Hee_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/경희대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -256,7 +359,10 @@
         <div class="rank_9">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">9</div>
             </div>
             <div class="college_rank_name">중앙대학교</div>
@@ -267,7 +373,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Chung_Ang_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/중앙대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -276,7 +387,10 @@
         <div class="rank_10">
           <div class="rank_detail">
             <div class="rank_rank">
-              <div class="r1">순위<hr></div>
+              <div class="r1">
+                순위
+                <hr />
+              </div>
               <div class="r2">10</div>
             </div>
             <div class="college_rank_name">건국대학교</div>
@@ -287,7 +401,12 @@
             </div>
             <div class="detail_button_container">
               <div class="detail_botton_container_in">
-                <button onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/Konkuk_University.html'" class="detail_button">자세히보기</button>
+                <button
+                  onclick="window.location.href='https://soongmoon-carrer-html-college.netlify.app/colleges/seoul/건국대학교.html'"
+                  class="detail_button"
+                >
+                  자세히보기
+                </button>
               </div>
             </div>
           </div>
@@ -297,25 +416,43 @@
     </div>
     <div id="location_college" class="location_college">
       <div class="location_title">
-        <span class="thick"> 지역별 대학</span><br>
+        <span class="thick"> 지역별 대학</span><br />
         <div class="small">지역별로 대학을 모아봤어요</div>
       </div>
       <div class="location_college_container">
-        <div class="location_college_container_left">
-        </div>
+        <div class="location_college_container_left"></div>
         <div class="location_college_map">
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Seoul.html"><div class="seoul_point"></div></a>
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Gyeonggi_do.html"><div class="Gyeonggi-do_point"></div></a>
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Chungcheong_do.html"><div class="Chungcheong-do_point"></div></a>
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Jeolla_do.html"><div class="Jeolla-do_point"></div></a>
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Gangwon_do.html"><div class="Gangwon-do_point"></div></a>
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Gyeongsang_do.html"><div class="Gyeongsang-do_point"></div></a>
-          <a href="https://soongmoon-carrer-html-college.netlify.app/location/Jeju.html"><div class="Jeju_point"></div></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Seoul.html"
+            ><div class="seoul_point"></div
+          ></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Gyeonggi_do.html"
+            ><div class="Gyeonggi-do_point"></div
+          ></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Chungcheong_do.html"
+            ><div class="Chungcheong-do_point"></div
+          ></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Jeolla_do.html"
+            ><div class="Jeolla-do_point"></div
+          ></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Gangwon_do.html"
+            ><div class="Gangwon-do_point"></div
+          ></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Gyeongsang_do.html"
+            ><div class="Gyeongsang-do_point"></div
+          ></a>
+          <a
+            href="https://soongmoon-carrer-html-college.netlify.app/location/Jeju.html"
+            ><div class="Jeju_point"></div
+          ></a>
         </div>
-        <div class="location_college_container_right">
-        </div>
+        <div class="location_college_container_right"></div>
       </div>
-      
     </div>
   </body>
 </html>

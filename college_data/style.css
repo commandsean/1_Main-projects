@@ -76,6 +76,7 @@ body {
 }
 
 .go_up::before {
+  border-radius: 20px;
   text-align: center;
   display: none;
   color: black;
@@ -888,6 +889,7 @@ body {
 */
 
 .location_college_map {
+  box-shadow: 6px 6px 8px 6px rgba(199, 199, 199, 0.8);
   z-index: 10;
   background-color: #3498db;
   border-radius: 200px;
