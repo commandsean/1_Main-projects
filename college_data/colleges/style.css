@@ -115,6 +115,7 @@
 
 .logo_name {
   width: 100%;
+  position: relative;
   height: 300px;
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -150,6 +151,7 @@
 .name_location {
   margin-left: 20px;
   font-size: 30px;
+  border: 1px solid green;
 }
 
 .name {
@@ -161,6 +163,8 @@
 }
 
 .location_box {
+  margin-top: 10px;
+  border: 1px solid purple;
   display: flex;
   width: 100%;
   height: 30px;
@@ -181,4 +185,43 @@
   color: #fff;
   font-size: 15px;
   display: inline;
+}
+
+.goto_site {
+  border-radius: 5px;
+  background-color: #ffc511;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+}
+
+.goto_site:hover {
+  background-color: #ffd040;
+}
+
+.name_location a {
+  text-decoration: none;
+}
+
+.admission_office {
+  display: flex;
+  background-color: #ffaa0b;
+  color: white;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  bottom: 25px;
+  margin-left: 220px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.admission_office:hover {
+  background: #ffb62e;
 }
