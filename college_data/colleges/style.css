@@ -227,68 +227,68 @@
   height: 2000px;
 }
 
-.list_container {
-  position: relative;
-  height: 100%;
-  border: 1px solid red;
-  width: 20vw;
-  min-width: 255px;
-}
-
-.main_list {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  background: #f1f5fb;
-  margin-top: 50px;
-  position: absolute;
-  right: 0;
-  height: px;
-  width: 255px;
-}
-
-.main_list a {
-  text-decoration: none;
-}
-
 /* 현재 페이지 리스트 (수정해야됨) */
 
-.lists {
-  position: relative;
-  font-family: noto-sans-cjk-kr, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: black;
-  display: flex;
-  align-items: center;
-  width: 235px;
-  height: 48px;
-  padding-left: 20px;
-}
-
-.lists::before {
-  display: none;
-  content: '';
-  position: absolute;
-  width: 5px;
-  height: 48px;
-  background: #0a66c2;
-  top: 0;
-  left: 0;
-}
-
-.lists:hover::before {
-  display: flex;
-}
-
-.lists:hover {
-  background: #d9e2f2;
-  color: #0a66c2;
-}
 
 /* 현재 페이지 리스트 (수정해야됨) */
 
 .main_detail_container {
+  flex-direction: column;
+  display: flex;
   height: 100%;
-  border: 1px solid blue;
-  width: 80vw;
+  width: 100%;
+}
+
+
+.jung{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.j_title{
+  background-color: #3b3b3b;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.j_img{
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+
+.su{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.s_title{
+  background-color: #3b3b3b;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.s_img{
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.download_icon {
+  width: 100px;
+  height: 100%;
+  background-image: url(./icon/pdf-svgrepo-com.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
